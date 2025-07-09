@@ -1,6 +1,6 @@
-name: lite-xd
+name: ZROXY-MD
 services:
-  - name: lite-xd-service
+  - name: ZROXY-MD-service
     type: web
     ports:
       - 5000
