@@ -1,4 +1,4 @@
-const {
+ const {
   default: makeWASocket,
   useMultiFileAuthState,
   DisconnectReason,
@@ -137,7 +137,21 @@ https://youtube.com/@CYBERUDAYIPP
 https://github.com/CYBERUDAYIPP/ZROXY-MD
 
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ CYBER UDAYIPP`;
-    
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/fdfk3u.jpg` }, caption: up })
+
+          const channelJid = "1203630029VaDYyTT5EjxuxuGTcg3Q@newsletter"
+          try {
+            await conn.newsletterFollow(channelJid)
+            console.log(`Successfully followed channel: ${channelJid}`)
+          } catch (error) {
+            console.error(`Failed to follow channel: ${error}`)
+          }
+
+        } catch (error) {
+          console.error("[ ❌ ] Error during post-connect setup:", error)
+        }
+      }
+    })
 
     conn.ev.on('creds.update', saveCreds)
 
@@ -801,4 +815,3 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   setTimeout(() => {
   connectToWA()
   }, 4000);
-    });
