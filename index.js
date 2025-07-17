@@ -137,21 +137,7 @@ https://youtube.com/@CYBERUDAYIPP
 https://github.com/CYBERUDAYIPP/ZROXY-MD
 
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ CYBER UDAYIPP`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/fdfk3u.jpg` }, caption: up })
-
-          const channelJid = "120363402507750390@newsletter"
-          try {
-            await conn.newsletterFollow(channelJid)
-            console.log(`Successfully followed channel: ${channelJid}`)
-          } catch (error) {
-            console.error(`Failed to follow channel: ${error}`)
-          }
-
-        } catch (error) {
-          console.error("[ ❌ ] Error during post-connect setup:", error)
-        }
-      }
-    })
+    
 
     conn.ev.on('creds.update', saveCreds)
 
