@@ -801,3 +801,4 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   setTimeout(() => {
   connectToWA()
   }, 4000);
+    });
